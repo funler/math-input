@@ -109,7 +109,7 @@ const KeypadButton = React.createClass({
                 ...this._getFocusStyle(type)
             );
 
-            for (const borders of Object.values(BorderStyles)) {
+            for (const borders of _.values(BorderStyles)) {
                 css(
                     View.styles.initial,
                     ...this._getButtonStyle(type, borders)
